@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 const App = (props) => {
   const [selected, setSelected] = useState(0)
   const [points, setPoints] = useState(new Uint8Array(props.anecdotes.length))
-    let topAnecdoteNr = points.indexOf(Math.max.apply(null, points))
+  let topAnecdoteNr = points.indexOf(Math.max.apply(null, points))
 
   const anecdotePicker = ({anecdotes}) => () => {
   let randomNumber = Math.floor(Math.random()*anecdotes.length)
